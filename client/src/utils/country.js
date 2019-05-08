@@ -1,7 +1,7 @@
 /**
  * country
  *
- * @author sniperchariot
+ * @author hyczzhu
  */
 
 const COUNTRY_DICT = {

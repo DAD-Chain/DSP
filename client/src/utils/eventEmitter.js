@@ -1,7 +1,7 @@
 /**
  * eventEmitter
  *
- * @author sniperchariot
+ * @author hyczzhu
  */
 
 import EventEmitter from 'event-emitter'
