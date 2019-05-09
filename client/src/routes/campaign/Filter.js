@@ -134,7 +134,21 @@ const Filter = ({
                         </FilterItem>
                     </Col> : null
             }
-
+            <Col {...TwoColProps} xl={{ span: 10 }} md={{ span: 24 }} sm={{ span: 24 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                    <div>
+                        <Button type="primary"
+                            size="large"
+                            className="margin-right"
+                            onClick={handleSubmit}
+                        >Search</Button>
+                        <Button size="large" onClick={handleReset}>Reset</Button>
+                    </div>
+                    <div>
+                        <Button size="large" type="ghost" onClick={onAdd}>Create</Button>
+                    </div>
+                </div>
+            </Col>
         </Row>
     )
 }
