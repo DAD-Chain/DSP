@@ -87,13 +87,6 @@ const App = ({ children, dispatch, app, loading, location }) => {
         <LocaleProvider locale={enUS}>
             <div>
                 <Loader fullScreen spinning={loading.effects['app/query']} />
-                <Helmet>
-                    <title>DAD</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="icon" href={logo} type="image/x-icon" />
-                    {iconFontJS && <script src={iconFontJS} />}
-                    {iconFontCSS && <link rel="stylesheet" href={iconFontCSS} />}
-                </Helmet>
                 <div
                     className={classnames(styles.layout, { [styles.fold]: isNavbar ? false : siderFold }, { [styles.withnavbar]: isNavbar })}
                 >
