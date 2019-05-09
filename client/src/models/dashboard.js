@@ -51,6 +51,8 @@ export default modelExtend(model, {
             payload = {},
         }, { call, put }) {
             payload.location = 'shenzhen'
+            payload.count = 100
+            payload.page = call.page || 1
             const result = yield call(weatherService.query, payload)
             const { success } = result
             if (success) {

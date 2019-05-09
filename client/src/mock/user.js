@@ -61,6 +61,16 @@ const adminUsers = [
         username: '吴彦祖',
         password: '123456',
         permissions: userPermission.DEVELOPER,
+    },{
+        id: 3,
+        username: 'test',
+        password: '123456',
+        permissions: userPermission.DEVELOPER,
+    },{
+        id: 4,
+        username: 'vistor',
+        password: '123456',
+        permissions: userPermission.DEFAULT,
     },
 ]
 
@@ -124,6 +134,8 @@ module.exports = {
         const token = JSON.parse(cookies.token)
         if (token) {
             response.success = token.deadline > new Date().getTime()
+        }else{
+            console.log(`invalide token`)
         }
         if (response.success) {
             const userItem = adminUsers.filter(_ => _.id === token.id)
