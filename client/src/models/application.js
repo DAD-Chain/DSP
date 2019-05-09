@@ -194,6 +194,12 @@ export default modelExtend(pageModel, {
         changeTab (state, { payload }) {
             return { ...state, platform: payload }
         },
+        showTab (state, { payload }) {
+            return { ...state, platform: payload, modalVisible: true}
+        },
+        hideTab (state, { payload }) {
+            return { ...state, platform: payload, modalVisible: false}
+        },
 
         showModal (state, { payload }) {
             return { ...state, ...payload, modalVisible: true }
