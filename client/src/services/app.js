@@ -11,10 +11,6 @@ export const getDefaultEntrance = (loginUser) => {
         defaultEntrance = '/campaign'
     } else if (loginUser.isAdvertiser) {
         defaultEntrance = '/campaign'
-    } else if (loginUser.isPublisher) {
-        defaultEntrance = '/application'
-    } else {
-        return ''
     }
 
     return defaultEntrance
