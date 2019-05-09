@@ -138,6 +138,12 @@ const List = ({ isAdmin, onDuplicateItem, onDeleteItem, onEditItem, onChangeStat
             render: country => (country || []).join(', ') || 'All',
         },
         {
+            title: 'City',
+            dataIndex: 'City',
+            key: 'City',
+            render: City => (City || []).join(', ') || 'All',
+        },
+        {
             title: 'Payment Method',
             dataIndex: 'payment_method',
             key: 'payment_method',
