@@ -126,13 +126,6 @@ const List = ({ isAdmin, platform, onEditItem, onChangeStatus, ...tableProps }) 
                     key: '1',
                     name: 'Edit',
                 },
-                {
-                    key: '1',
-                    name: 'Save',
-                },{
-                    key: '1',
-                    name: 'Save as',
-                },
             ]
             return (
                 <DropOption
@@ -149,7 +142,7 @@ const List = ({ isAdmin, platform, onEditItem, onChangeStatus, ...tableProps }) 
             <Table
                 {...tableProps}
                 bordered
-                // scroll={{ x: 1200 }}
+                scroll={{ x: 1200 }}
                 columns={columns}
                 simple
                 className={styles.table}
