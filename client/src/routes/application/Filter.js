@@ -100,6 +100,7 @@ const Filter = (
                         <Select style={{ width: '100%' }} size="large" onChange={handleChangeSelect.bind(null, 'status')}>
                             <Option value="all">All</Option>
                             <Option value="active">Active</Option>
+                            <Option value="pending">Pending</Option>
                             <Option value="paused">Paused</Option>
                         </Select>
                     )}

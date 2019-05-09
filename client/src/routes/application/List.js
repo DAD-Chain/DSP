@@ -126,6 +126,13 @@ const List = ({ isAdmin, platform, onEditItem, onChangeStatus, ...tableProps }) 
                     key: '1',
                     name: 'Edit',
                 },
+                {
+                    key: '1',
+                    name: 'Save',
+                },{
+                    key: '1',
+                    name: 'Save as',
+                },
             ]
             return (
                 <DropOption
