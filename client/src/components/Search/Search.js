@@ -13,6 +13,7 @@ class Search extends React.Component {
       const data = {
           keyword: ReactDOM.findDOMNode(this.refs.searchInput).value,
       }
+      data.field = ''
       if (this.props.select) {
           data.field = this.state.selectValue
       }
