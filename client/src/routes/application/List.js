@@ -142,7 +142,7 @@ const List = ({ isAdmin, platform, onEditItem, onChangeStatus, ...tableProps }) 
             <Table
                 {...tableProps}
                 bordered
-                // scroll={{ x: 1200 }}
+                scroll={{ x: 1200 }}
                 columns={columns}
                 simple
                 className={styles.table}

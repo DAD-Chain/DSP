@@ -55,23 +55,23 @@ export default modelExtend(pageModel, {
                 }
             })
         },
-        // setup ({ dispatch, history }) {
-        //     dispatch({ type: 'query',
-        //         payload: {
-        //             platform: PLATFORM.PC_WEB,
-        //             page: 1,
-        //             pageSize: 10,
-        //         } })
-        //     // history.listen((location) => {
-        //     //     if (location.pathname === '/application') {
-        //     //         dispatch({ type: 'query',
-        //     //             payload: {
-        //     //                 platform: PLATFORM.PC_WEB,
-        //     //                 ...queryString.parse(location.search),
-        //     //             } })
-        //     //     }
-        //     // })
-        // },
+        setup ({ dispatch, history }) {
+            dispatch({ type: 'query',
+                payload: {
+                    platform: PLATFORM.PC_WEB,
+                    page: 1,
+                    pageSize: 10,
+                } })
+            // history.listen((location) => {
+            //     if (location.pathname === '/application') {
+            //         dispatch({ type: 'query',
+            //             payload: {
+            //                 platform: PLATFORM.PC_WEB,
+            //                 ...queryString.parse(location.search),
+            //             } })
+            //     }
+            // })
+        },
     },
 
     effects: {
@@ -193,6 +193,12 @@ export default modelExtend(pageModel, {
 
         changeTab (state, { payload }) {
             return { ...state, platform: payload }
+        },
+        showTab (state, { payload }) {
+            return { ...state, platform: payload, modalVisible: true}
+        },
+        hideTab (state, { payload }) {
+            return { ...state, platform: payload, modalVisible: false}
         },
 
         showModal (state, { payload }) {
