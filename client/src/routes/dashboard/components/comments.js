@@ -22,6 +22,14 @@ const status = {
 function Comments ({ data }) {
     const columns = [
         {
+            title: 'title',
+            dataIndex: 'title',
+            render: (text, it) => (<div>
+                <h5 className={styles.name}>{it.name}</h5>
+                <p className={styles.title}>{it.title}</p>
+            </div>),
+        },
+        {
             title: 'avatar',
             dataIndex: 'avatar',
             width: 48,
