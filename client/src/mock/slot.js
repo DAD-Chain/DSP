@@ -1,5 +1,0 @@
-/**
- * slot
- *
- * @author whacamole
- */

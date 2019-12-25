@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="14px" viewBox="0 0 7 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>箭头</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录页面-hover" transform="translate(-430.000000, -491.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="main" transform="translate(170.000000, 93.000000)">
+                <g id="文案" transform="translate(0.000000, 134.000000)">
+                    <g id="按钮" transform="translate(0.000000, 244.000000)">
+                        <path d="M260.339697,31.1005051 L263.874517,27.5656854 C264.186936,27.253266 264.186936,26.746734 263.874517,26.4343146 L260.339697,22.8994949 C259.886768,22.4465657 259.886768,21.7122222 260.339697,21.2592929 C260.792626,20.8063636 261.52697,20.8063636 261.979899,21.2592929 L266.490455,25.7698485 C267.169848,26.4492424 267.169848,27.5507576 266.490455,28.2301515 L261.979899,32.7407071 C261.52697,33.1936364 260.792626,33.1936364 260.339697,32.7407071 C259.886768,32.2877778 259.886768,31.5534343 260.339697,31.1005051 Z" id="箭头"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

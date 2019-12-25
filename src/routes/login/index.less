@@ -1,0 +1,193 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -160px 0 0 -160px;
+  width: 320px;
+  height: 320px;
+  padding: 36px;
+  box-shadow: 0 0 100px rgba(0,0,0,.08);
+
+  button {
+    width: 100%;
+  }
+
+  p {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  img {
+    width: 40px;
+    margin-right: 8px;
+  }
+
+  span {
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.layout{
+  background-color: white;
+  width:100%;
+  height:100%;
+}
+
+
+.topHeader{
+  background-color: white;
+  width:1153px;
+  display: flex;
+  margin: 0 auto;
+  height: 70px;
+  padding: 0;
+  padding-right: 53px;
+  padding-top:16px;
+  justify-content : space-between;
+  align-items: center;
+  .headerLogo{
+    background-image: url('../../public/logo.svg');
+    width: 120px;
+    height: 54px;
+  }
+  .headerButton{
+    width:193px;
+    height:38px;
+    background:linear-gradient(313deg,rgba(0,235,246,1) 0%,rgba(0,145,255,1) 100%);
+    border-radius:19px;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+    p{
+      font-size:16px;
+      font-family:PingFangSC-Medium,PingFang SC !important;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:22px;
+      margin:0 auto !important;
+      margin-top: 7px !important;
+    }
+    &:hover{
+      background:linear-gradient(313deg,rgba(0,235,246,1) 0%,rgba(0,145,255,1) 100%);
+      opacity:0.85;
+    }
+  }
+
+  .headerButtonSignIn{
+    cursor: pointer;
+    margin-left: 500px;
+    p{
+      color: rgba(158,158,177,0.9);
+      font-size:16px;
+      font-family:PingFangSC-Medium,PingFang SC !important;
+      font-weight:400;
+      &:hover{
+        color: blue;
+        opacity:0.85;
+      }
+    }
+
+  }
+}
+
+.middleContent{
+  background: white;
+  width:1153px;
+  height: calc(~'100vh - 70px');
+  margin:auto;
+  padding-top:auto;
+  display: flex;
+  
+  .content{
+    width:1153px;
+    display: flex;
+    justify-content : space-between;
+    height:641px;
+    margin: auto;
+  }
+
+  .title{
+    width:408px;
+    height:143px;
+    margin-top: 134px;
+    background-image: url('../../public/title.svg');
+    margin-bottom: 21px;
+  }
+  p{
+    font-size:25px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(124,139,153,1);
+    line-height:36px;
+    margin-bottom: 32px;
+  }
+  .middleButton{
+    width:288px;
+    height:54px;
+    background:linear-gradient(314deg,rgba(0,235,246,1) 0%,rgba(0,145,255,1) 100%);
+    box-shadow:0px 13px 30px 0px rgba(0,156,254,0.16);
+    border-radius:27px;
+    text-align: center;
+    padding-top: 12px !important;
+    justify-content : space-between;
+    display: flex;
+    padding-left: 36px;
+    padding-right:31px;
+    cursor: pointer;
+    transition: 0.3s;
+    p{
+      font-size:20px;
+      font-family:PingFangSC-Medium,PingFang SC;
+      font-weight:Medium;
+      color:rgba(255,255,255,1);
+      line-height:28px;
+    }
+    .arrow{
+      background-image: url('../../public/arrow.svg');
+      margin-top:8px;
+      width:7px;
+      height: 14px;
+    }
+    &:hover{
+      background:linear-gradient(313deg,rgba(0,235,246,1) 0%,rgba(0,145,255,1) 100%);
+      opacity:0.85;
+      padding-right:21px;
+    }
+  }
+
+  .left{
+    margin-top: -20px;
+  }
+
+  .rightBG{
+    margin-top: -20px;
+    width:641px;
+    height:641px;
+    background-image: url('../../public/bg.svg');
+    margin-left: -20px;
+  }
+}
+
+.ant-spin-container,
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
