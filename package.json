@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "dependencies": {
     "antd": "^2.11.2",
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.23.0",
     "base-58": "0.0.1",
     "classnames": "^2.2.5",
