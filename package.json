@@ -39,7 +39,7 @@
     "react-dom": "^15.6.2",
     "react-draft-wysiwyg": "^1.10.0",
     "react-helmet": "^5.1.3",
-    "recharts": "^0.22.4",
+    "recharts": "^2.1.14",
     "xlsx": "0.11.8"
   },
   "devDependencies": {
